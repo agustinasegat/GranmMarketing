@@ -1,0 +1,120 @@
+/*VISTA MOBILE*/
+@media (max-width:576px) {
+
+    /* Sección About */
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 32px 0px;
+    }
+
+    .servicios-h2 {
+        width: 100%;
+    }
+
+    /* Título Sección About */
+    .about-title {
+        /* Fuente */
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 80px;
+        text-align: center;
+        /* color */
+        color: nth($color, 8)
+    }
+
+    .about-text {
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 8)
+    }
+}
+
+
+/*VISTA TABLET*/
+@media (min-width:577px) {
+
+    /* Sección About */
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 32px 0px;
+    }
+
+
+    /* Título Sección About */
+    .about-title {
+        /* Fuente */
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        /* color */
+        color: nth($color, 8)
+    }
+
+    .about-text {
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 8)
+    }
+}
+
+/*VISTA DESKTOP*/
+@media (min-width:992px) {
+
+    /* Sección About */
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 120px 60px 0px
+    }
+
+    /* Título Sección About */
+    .about-title {
+        /* Fuente */
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 80px;
+        text-align: justify;
+        /* color */
+        color: nth($color, 8)
+    }
+
+    .about-text {
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: justify;
+        /* Color */
+        color: nth($color, 8)
+    }
+
+    .img-about {
+        width: 100%;
+    }
+}

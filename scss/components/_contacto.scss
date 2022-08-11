@@ -1,0 +1,257 @@
+/* CONTACTO*/
+
+/*MOBILE*/
+@media (max-width:576px) {
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 32px 0px 32px;
+    }
+
+
+    /*Título*/
+    .contacto-title {
+        /* Tamaño*/
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+    /*Texto*/
+    .contacto-text {
+        /* Fuente*/
+        font-family: 'Lato';
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+    /*Botones redes*/
+    .redes-sociales {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        background-color: #b89869;
+        margin-left: 1em;
+        color: #fbfbfb;
+        border: none;
+        text-decoration: none;
+        font-size: 1.1em;
+
+        &:hover {
+            background-color: nth($color, 1);
+            color: nth($color, 3);
+            box-shadow: 0px 16px 32px nth($color, 7)
+        }
+
+        /*Iconos redes*/
+        .social-icon {
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+
+    /*Display de íconos contacto*/
+    .social-list {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    /*Borde de la imagen*/
+    .img-border {
+        border-radius: 44px;
+    }
+
+}
+
+/*TABLET*/
+@media (min-width:577px) {
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 32px 0px 32px;
+    }
+
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /*Título*/
+    .contacto-title {
+        /* Tamaño*/
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4em;
+        line-height: 1.25em;
+        text-align: center;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+    /*Texto*/
+    .contacto-text {
+        /* Fuente*/
+        font-family: 'Lato';
+        font-weight: lighter;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: center;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+
+    /*Iconos redes*/
+    .social-icon {
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    /*Botones redes*/
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: nth($color, 3);
+        margin-left: 24px;
+        color: nth($color, 1);
+        border: none;
+
+
+        &:hover {
+            background-color: nth($color, 1);
+            color: nth($color, 3);
+            box-shadow: 0px 16px 32px nth($color, 7)
+        }
+
+        /*Iconos redes*/
+        .social-icon {
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+
+    /*Display de íconos contacto*/
+    .social-list {
+        list-style: none;
+        display: flex;
+        margin-inline-start: -20px;
+    }
+
+    .m-left {
+        margin-left: 36px;
+    }
+
+
+
+}
+
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+
+    /*Sección contacto*/
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 120px, 120px, 120px, 0px
+    }
+
+    .contacto-title {
+        /* Tamaño*/
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4em;
+        line-height: 1.25em;
+        text-align: justify;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+    /*Texto*/
+    .contacto-text {
+        /* Fuente*/
+        font-family: 'Lato';
+        font-weight: lighter;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: justify;
+        /* color y sombras*/
+        color: nth($color, 8)
+    }
+
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+
+    /*Botones redes*/
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: nth($color, 3);
+        color: nth($color, 1);
+        border: none;
+
+        &:hover {
+            background-color: nth($color, 1);
+            color: nth($color, 3);
+            box-shadow: 0px 16px 32px nth($color, 7)
+        }
+    }
+
+    /*Display de íconos contacto*/
+    .social-list {
+        list-style: none;
+        display: flex;
+        margin-inline-start: -20px;
+    }
+
+    .m-left {
+        margin-left: 36px;
+    }
+
+    /*Iconos redes*/
+    .social-icon {
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+}

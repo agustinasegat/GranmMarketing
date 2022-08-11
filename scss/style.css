@@ -1,0 +1,850 @@
+@charset "UTF-8";
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Color del Navbar*/
+.nav-bg {
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 0px 2px 4px rgba(45, 45, 45, 0.25);
+          box-shadow: 0px 2px 4px rgba(45, 45, 45, 0.25);
+}
+
+/*VISTA MOBILE Y TABLET*/
+@media (max-width: 992px) {
+  /*Botón Whatsapp en Modo Responsive*/
+  .whatsapp-responsive {
+    background-color: #25d366;
+    -webkit-box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+            box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+    color: #fbfbfb;
+    border: none;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 8px;
+    gap: 24px;
+    width: 100%;
+    height: 64px;
+  }
+  /*Hover Botones Navbar*/
+  .nav-link:hover {
+    color: #b89869;
+  }
+  /*Esconde botón Whatsapp top*/
+  .whatsapp-button {
+    display: none;
+  }
+}
+
+/*VISTA DESKTOP*/
+@media (min-width: 992px) {
+  /*Display Botones del Navbar*/
+  .nav-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*Botones del Navbar*/
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 588px;
+    height: 66px;
+  }
+  /*Items Navbar*/
+  .link-style {
+    /*fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* display*/
+    height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* color */
+    color: black;
+    /* hover*/
+  }
+  .link-style:hover {
+    color: #b89869;
+  }
+  /*Botón de Whatsapp en Desktop*/
+  .whatsapp-button {
+    /*Colores*/
+    background-color: #25d366;
+    -webkit-box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+            box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+    color: #fbfbfb;
+    border: none;
+    /*Forma*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 9.61769px;
+    gap: 8px;
+    width: 282px;
+    height: 51.24px;
+    border-radius: 24px;
+    /*Fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  /*Esconde el Botón de Whatsapp en vista Desktop*/
+  .whatsapp-responsive {
+    display: none;
+  }
+}
+
+/*VISTA MOBILE*/
+@media (max-width: 576px) {
+  /*Section Hero*/
+  #inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 40px 16px 0px;
+    left: 0px;
+    top: 181px;
+  }
+  /*Container general*/
+  .container-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 40px;
+  }
+  /*Container Texto*/
+  .valor {
+    /* Display */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    gap: 40px;
+  }
+  /*Titulo*/
+  .hero-title {
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+  }
+  /*Texto*/
+  .hero-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #2d2d2d;
+  }
+  /*Imagen*/
+  .img-hero {
+    width: 95%;
+    height: 336.89px;
+  }
+  /*Botón*/
+  .container-button-hero {
+    /* Forma */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 62px;
+    gap: 8px;
+  }
+  #hero-button {
+    /* Forma */
+    position: relative;
+    display: block;
+    padding: 13px;
+    width: 207px;
+    height: 54px;
+    border-radius: 24px;
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* Color */
+    color: #fbfbfb;
+    background-color: #b89869;
+  }
+  .fa-arrow-right {
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    padding: 5px;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+  #hero-button:hover {
+    background-color: #b89869;
+    color: #fbfbfb;
+    padding-right: 20px;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+    width: 217px;
+  }
+  #hero-button:hover .fa-arrow-right {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    opacity: 1;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/*VISTA TABLET*/
+@media (min-width: 577px) {
+  /*Section Inicio*/
+  #inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 40px 32px 0px;
+    left: 0px;
+    top: 181px;
+  }
+  /*Container general*/
+  .container-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0px 80px;
+    gap: 40px;
+  }
+  /*Container Texto*/
+  .valor {
+    /* Display */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 40px;
+  }
+  /*Titulo*/
+  .hero-title {
+    /*Fuente*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 130px;
+    /* Color */
+    color: black;
+  }
+  /*Texto*/
+  .hero-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    height: 65px;
+    /* Color */
+    color: #2d2d2d;
+  }
+  /*Imagen*/
+  .img-hero {
+    height: 607px;
+    max-width: 585px;
+    border-radius: 48px;
+  }
+  /*Botón*/
+  .container-button-hero {
+    /* Forma */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 62px;
+    gap: 8px;
+  }
+  #hero-button {
+    /* Forma */
+    position: relative;
+    display: block;
+    padding: 13px;
+    width: 207px;
+    height: 54px;
+    border-radius: 24px;
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* Color */
+    color: #fbfbfb;
+    background-color: #b89869;
+  }
+  .fa-arrow-right {
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    padding: 5px;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+  #hero-button:hover {
+    background-color: #b89869;
+    color: #fbfbfb;
+    padding-right: 20px;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+    width: 217px;
+  }
+  #hero-button:hover .fa-arrow-right {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    opacity: 1;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/*VISTA DESKTOP*/
+@media (min-width: 992px) {
+  /*Section Inicio*/
+  #inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 80px 120px 0px;
+    left: 0px;
+    top: 93px;
+  }
+  /*Container general*/
+  .container-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 24px;
+  }
+  /*Container Texto*/
+  .valor {
+    /* Display */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+  }
+  /*Titulo*/
+  .hero-title {
+    /*Fuente*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 130px;
+  }
+  /*Texto*/
+  .hero-text {
+    /*Fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2d2d2d;
+  }
+  /*Botón*/
+  .container-button-hero {
+    /* Forma */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 62px;
+    gap: 8px;
+  }
+  /*imagen*/
+  .img-hero {
+    height: 607px;
+    border-radius: 44px;
+  }
+  /*Botón*/
+  .container-button-hero {
+    /* Forma */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 62px;
+    gap: 8px;
+  }
+  #hero-button {
+    /* Forma */
+    position: relative;
+    display: block;
+    padding: 13px;
+    width: 207px;
+    height: 54px;
+    border-radius: 24px;
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* Color */
+    color: #fbfbfb;
+    background-color: #b89869;
+  }
+  .fa-arrow-right {
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    padding: 5px;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+  #hero-button:hover {
+    background-color: #b89869;
+    color: #fbfbfb;
+    padding-right: 20px;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+    width: 217px;
+  }
+  #hero-button:hover .fa-arrow-right {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    opacity: 1;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/*SERVICIOS*/
+/*Tarjetas*/
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+  padding: 48px 16px 32px;
+  position: relative;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 4px 4px 24px rgba(45, 45, 45, 0.25);
+          box-shadow: 4px 4px 24px rgba(45, 45, 45, 0.25);
+  height: 85%;
+}
+
+/*Iconos de las tarjetas*/
+.card-img-top {
+  width: 64px;
+  position: absolute;
+  top: -1.875em;
+}
+
+/*Títulos de las tarjetas*/
+.card-title {
+  font-family: 'Contrail One', cursive;
+  font-weight: 200;
+  font-size: 1.875em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/*Textos de las tarjetas*/
+.card-text {
+  font-family: 'Lato';
+  font-size: 1em;
+  line-height: 1.375em;
+  text-align: center;
+}
+
+/*VISTA MOBILE*/
+@media (max-width: 576px) {
+  /*Sección servicios*/
+  #servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 120px 16px 0px;
+  }
+  /*Container servicios*/
+  .container-servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 96px;
+  }
+  /*Título de la sección servicios*/
+  .servicios-h2 {
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 0.462em;
+    padding-bottom: 1.538em;
+    color: #2d2d2d;
+  }
+  /*Títulos de las tarjetas*/
+  .card-title {
+    /* Fuente */
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+  /*Textos de las tarjetas*/
+  .card-text {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+}
+
+/*VISTA TABLET*/
+@media (min-width: 577px) {
+  /*Sección servicios*/
+  #servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 120px 32px 0px;
+  }
+  /*Container servicios*/
+  .container-servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 96px;
+  }
+  /*Título de la sección servicios*/
+  .servicios-h2 {
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 0.462em;
+    padding-bottom: 1.538em;
+    color: #2d2d2d;
+  }
+  /*Títulos de las tarjetas*/
+  .card-title {
+    /* Fuente */
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+  /*Textos de las tarjetas*/
+  .card-text {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+}
+
+/*VISTA DESKTOP*/
+@media (min-width: 992px) {
+  /*Sección servicios*/
+  #servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 120px 80px 0px 80px;
+  }
+  /*Container servicios*/
+  .container-servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    gap: 96px;
+  }
+  /*Título de la sección servicios*/
+  .servicios-h2 {
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    padding-top: 0.462em;
+    padding-bottom: 1.538em;
+    color: #2d2d2d;
+  }
+  /*Títulos de las tarjetas*/
+  .card-title {
+    /* Fuente */
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+  /*Textos de las tarjetas*/
+  .card-text {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    /* Color */
+    color: #2d2d2d;
+  }
+}
+/*# sourceMappingURL=style.css.map */
